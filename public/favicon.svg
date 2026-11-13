@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
+  <defs>
+    <linearGradient id="iconBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#241712" />
+      <stop offset="100%" stop-color="#140d0a" />
+    </linearGradient>
+
+    <linearGradient id="iconBorderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f07e53" stop-opacity="0.9" />
+      <stop offset="40%" stop-color="#ca5e3a" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#ca5e3a" stop-opacity="0.2" />
+    </linearGradient>
+
+    <linearGradient id="infinityCopper" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f07e53" />
+      <stop offset="35%" stop-color="#ea580c" />
+      <stop offset="50%" stop-color="#fbbf24" />
+      <stop offset="65%" stop-color="#ea580c" />
+      <stop offset="100%" stop-color="#f07e53" />
+    </linearGradient>
+
+    <filter id="copperGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="1.8" flood-color="#ea580c" flood-opacity="0.8" />
+    </filter>
+  </defs>
+
+  <!-- Ambient Outer Glow -->
+  <rect x="3" y="3" width="58" height="58" rx="16" fill="#ca5e3a" fill-opacity="0.15" filter="url(#copperGlow)" />
+
+  <!-- Badge Container -->
+  <rect x="4" y="4" width="56" height="56" rx="15" fill="url(#iconBgGrad)" stroke="url(#iconBorderGrad)" stroke-width="1.8" />
+
+  <!-- Corner Highlight -->
+  <path d="M 6 20 A 14 14 0 0 1 20 6" stroke="#f07e53" stroke-width="1.2" stroke-linecap="round" stroke-opacity="0.6" />
+
+  <!-- Infinity Symbol -->
+  <svg x="10" y="17" width="44" height="30" viewBox="0 0 40 24" overflow="visible">
+    <path
+      d="M 20,12 C 16,7 12,4.5 9,4.5 C 5.5,4.5 3,7.5 3,12 C 3,16.5 5.5,19.5 9,19.5 C 12,19.5 16,17 20,12 C 24,7 28,4.5 31,4.5 C 34.5,4.5 37,7.5 37,12 C 37,16.5 34.5,19.5 31,19.5 C 28,19.5 24,17 20,12 Z"
+      stroke="url(#infinityCopper)"
+      stroke-width="3.8"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      filter="url(#copperGlow)"
+    />
+  </svg>
+</svg>

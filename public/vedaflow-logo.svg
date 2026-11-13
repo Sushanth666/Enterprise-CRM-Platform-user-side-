@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 76" width="420" height="76" fill="none">
+  <defs>
+    <linearGradient id="logoBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#241712" />
+      <stop offset="100%" stop-color="#140d0a" />
+    </linearGradient>
+
+    <linearGradient id="logoBorderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f07e53" stop-opacity="0.9" />
+      <stop offset="40%" stop-color="#ca5e3a" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#ca5e3a" stop-opacity="0.2" />
+    </linearGradient>
+
+    <linearGradient id="logoInfinityCopper" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f07e53" />
+      <stop offset="35%" stop-color="#ea580c" />
+      <stop offset="50%" stop-color="#fbbf24" />
+      <stop offset="65%" stop-color="#ea580c" />
+      <stop offset="100%" stop-color="#f07e53" />
+    </linearGradient>
+
+    <linearGradient id="flowTextGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f07e53" />
+      <stop offset="100%" stop-color="#e25d32" />
+    </linearGradient>
+
+    <filter id="logoCopperGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="1.8" flood-color="#ea580c" flood-opacity="0.8" />
+    </filter>
+
+    <style>
+      .veda-title {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 900;
+        font-size: 30px;
+        letter-spacing: -0.5px;
+      }
+      .veda-sub {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        font-size: 10px;
+        letter-spacing: 2px;
+      }
+      .theme-title-veda {
+        fill: #0f172a;
+      }
+      @media (prefers-color-scheme: dark) {
+        .theme-title-veda {
+          fill: #ffffff;
+        }
+      }
+    </style>
+  </defs>
+
+  <!-- Icon Badge (Left) -->
+  <g transform="translate(6, 8)">
+    <rect x="0" y="0" width="58" height="58" rx="15" fill="#ca5e3a" fill-opacity="0.15" filter="url(#logoCopperGlow)" />
+    <rect x="1" y="1" width="56" height="56" rx="14" fill="url(#logoBgGrad)" stroke="url(#logoBorderGrad)" stroke-width="1.8" />
+    <path d="M 3 16 A 13 13 0 0 1 16 3" stroke="#f07e53" stroke-width="1.2" stroke-linecap="round" stroke-opacity="0.6" />
+
+    <svg x="7" y="14" width="44" height="28" viewBox="0 0 40 24" overflow="visible">
+      <path
+        d="M 20,12 C 16,7 12,4.5 9,4.5 C 5.5,4.5 3,7.5 3,12 C 3,16.5 5.5,19.5 9,19.5 C 12,19.5 16,17 20,12 C 24,7 28,4.5 31,4.5 C 34.5,4.5 37,7.5 37,12 C 37,16.5 34.5,19.5 31,19.5 C 28,19.5 24,17 20,12 Z"
+        stroke="url(#logoInfinityCopper)"
+        stroke-width="3.8"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        filter="url(#logoCopperGlow)"
+      />
+    </svg>
+  </g>
+
+  <!-- Typography (Right) -->
+  <g transform="translate(76, 22)">
+    <text x="0" y="24" class="veda-title">
+      <tspan class="theme-title-veda">Veda</tspan><tspan fill="url(#flowTextGrad)">Flow</tspan>
+    </text>
+    <text x="1" y="40" class="veda-sub" fill="#ca5e3a">
+      SALES INTELLIGENCE PLATFORM
+    </text>
+  </g>
+</svg>
+
